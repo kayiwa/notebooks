@@ -15,9 +15,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         apt-get install -y git \
                 wget \
                 bzip2 \
-                build-essential \
-                python-dev \
-                gfortran
+                build-essential
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
