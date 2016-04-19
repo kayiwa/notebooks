@@ -1,0 +1,5 @@
+[main]
+consumer_key=secretkey
+consumer_secret=secretsecret
+access_token=secrettoken
+access_token_secret=secrettokensecret
