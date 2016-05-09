@@ -2,8 +2,8 @@ FROM debian:7.4
 
 MAINTAINER Kamil Kwiek <kamil.kwiek@continuum.io>
 
-ADD run_notebook.sh /tmp/run_notebook.sh
-ADD environment.yml /tmp/environment.yml
+COPY run_notebook.sh /tmp/run_notebook.sh
+COPY environment.yml /tmp/environment.yml
 
 RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
     libglib2.0-0 libxext6 libsm6 libxrender1 \
